@@ -1,0 +1,14 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Teleport", "BloodTheme")
+
+local Tab = Window:NewTab("TeleportPlayer")
+local Section = Tab:NewSection("Teleport")
+
+
+Section:NewButton("โลก", "TeleportPlayer", function()
+    game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(522.408203, 368.533173, -303.324646, -0.985591769, -1.02632898e-08, -0.16914165, -2.21781615e-08, 1, 6.85539234e-08, 0.16914165, 7.13174302e-08, -0.985591769)
+end)
+
+Section:NewButton("ดวงจันทร์", "ButtonInfo", function()
+  game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4549.38135, 663.377441, 8463.57422, 0.917640269, -2.55817838e-08, 0.397412062, 3.69408149e-08, 1, -2.09268851e-08, -0.397412062, 3.38840778e-08, 0.917640269)
+end)
